@@ -2,11 +2,11 @@
 
 #include "song.hpp"
 
-Song::Song(std::string song, std::string artist, std::string album, std::string genre) {
-    set_song_name(song);
-    set_artist_name(artist);
-    set_album_name(album);
-    set_genre_name(genre);
+Song::Song(std::vector<std::string>& songPack) {
+    songName = songPack[0];
+    artistName = songPack[1];
+    albumName = songPack[2];
+    genreName = songPack[3];
 }
 
 std::string Song::get_song_name() {

@@ -10,6 +10,8 @@ int main() {
     //display menu
     myMusicManager.display_menu();
 
+   std::cout << "a\n";
+
     //start application loop
     myMusicManager.application_loop();
     
